@@ -124,8 +124,11 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/etc/motorola/comm_drv/plmn_text_table.bin:system/etc/motorola/comm_drv/plmn_text_table.bin \
 	vendor/motorola/milestone2/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt \
 	vendor/motorola/milestone2/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-	vendor/motorola/milestone2/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin
-	
+	vendor/motorola/milestone2/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
+	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin \
+	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin \
+	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin
+
 #bin
 PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/bin/pvrsrvinit:system/bin/pvrsrvinit \
