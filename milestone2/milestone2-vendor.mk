@@ -76,12 +76,15 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
 	vendor/motorola/milestone2/lib/libOMX.TI.h264.splt.Encoder.so:system/lib/libOMX.TI.h264.splt.Encoder.so \
 	vendor/motorola/milestone2/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
-	vendor/motorola/milestone2/lib/egl/libeglinfo.so:system/lib/egl/libeglinfo.so \
 	vendor/motorola/milestone2/lib/egl/libEGL_POWERVR_SGX530_125.so:system/lib/egl/libEGL_POWERVR_SGX530_125.so \
-	vendor/motorola/milestone2/lib/egl/libgles1_texture_stream.so:system/lib/egl/libgles1_texture_stream.so \
-	vendor/motorola/milestone2/lib/egl/libgles2_texture_stream.so:system/lib/egl/libgles2_texture_stream.so \
 	vendor/motorola/milestone2/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
-	vendor/motorola/milestone2/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so
+	vendor/motorola/milestone2/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+	vendor/motorola/milestone2/lib/libusc.so:system/lib/libusc.so \
+	
+	
+	#vendor/motorola/milestone2/lib/egl/libgles1_texture_stream.so:system/lib/egl/libgles1_texture_stream.so \
+	#vendor/motorola/milestone2/lib/egl/libgles2_texture_stream.so:system/lib/egl/libgles2_texture_stream.so \	
+	#vendor/motorola/milestone2/lib/egl/libeglinfo.so:system/lib/egl/libeglinfo.so \
 	
 #Moto etc
 PRODUCT_COPY_FILES += \
@@ -122,12 +125,20 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/etc/motorola/comm_drv/mmins_telephony.cfg:system/etc/motorola/comm_drv/mmins_telephony.cfg \
 	vendor/motorola/milestone2/etc/motorola/comm_drv/mmins_user_settings.cfg:system/etc/motorola/comm_drv/mmins_user_settings.cfg \
 	vendor/motorola/milestone2/etc/motorola/comm_drv/plmn_text_table.bin:system/etc/motorola/comm_drv/plmn_text_table.bin \
-	vendor/motorola/milestone2/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt \
-	vendor/motorola/milestone2/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-	vendor/motorola/milestone2/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
-	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin \
-	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin \
-	vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin
+	vendor/motorola/milestone2/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt 
+	#vendor/motorola/milestone2/usr/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin
+	#vendor/motorola/milestone2/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
+
+	#vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-azerty.kcm.bin \
+	#vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwerty.kcm.bin \
+	#vendor/motorola/milestone2/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin:system/usr/keychars/umts_milestone2-keypad-qwertz.kcm.bin
+
+#May be simlink...
+#PRODUCT_COPY_FILES += \
+	vendor/motorola/milestone2/usr/keychars/qwerty.kcm.bin:system/usr/keychars/qtouch-touchscreen.kcm.bin \
+	vendor/motorola/milestone2/usr/keychars/qwerty.kcm.bin:system/usr/keychars/cpcap-key.kcm.bin
+
+
 
 #bin
 PRODUCT_COPY_FILES += \
@@ -154,7 +165,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/motorola/jordan/app/MotoPhonePortal.apk:system/app/MotoPhonePortal.apk \
 	vendor/motorola/jordan/app/AudioEffectSettings.apk:system/app/AudioEffectSettings.apk \
-	vendor/motorola/jordan/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk
+	vendor/motorola/jordan/app/CompassCalibrate.apk:system/app/CompassCalibrate.apk \
 
 #extra
 PRODUCT_COPY_FILES += \
