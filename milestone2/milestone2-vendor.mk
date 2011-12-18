@@ -156,6 +156,10 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/bin/location:system/bin/location \
 	vendor/motorola/milestone2/bin/ssmgrd:system/bin/ssmgrd \
 	vendor/motorola/milestone2/bin/charge_only_mode:system/bin/charge_only_mode
+	
+#workaround for dhcpcd
+PRODUCT_COPY_FILES += \
+	vendor/motorola/milestone2/bin/dhcpcd:system/bin/dhcpcd
 
 #location proxy
 PRODUCT_COPY_FILES += \
