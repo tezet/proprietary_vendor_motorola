@@ -80,11 +80,12 @@ PRODUCT_COPY_FILES += \
 	vendor/motorola/milestone2/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
 	vendor/motorola/milestone2/lib/egl/libGLESv2_POWERVR_SGX530_125.so:system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
 	vendor/motorola/milestone2/lib/libusc.so:system/lib/libusc.so \
+	vendor/motorola/milestone2/lib/egl/libgles1_texture_stream.so:system/lib/egl/libgles1_texture_stream.so \
+	vendor/motorola/milestone2/lib/egl/libgles2_texture_stream.so:system/lib/egl/libgles2_texture_stream.so \
+	vendor/motorola/milestone2/lib/egl/libeglinfo.so:system/lib/egl/libeglinfo.so
 	
 	
-	#vendor/motorola/milestone2/lib/egl/libgles1_texture_stream.so:system/lib/egl/libgles1_texture_stream.so \
-	#vendor/motorola/milestone2/lib/egl/libgles2_texture_stream.so:system/lib/egl/libgles2_texture_stream.so \	
-	#vendor/motorola/milestone2/lib/egl/libeglinfo.so:system/lib/egl/libeglinfo.so \
+	#vendor/motorola/milestone2/lib/libbridge.so:system/lib/libbridge.so \
 	
 #Moto etc
 PRODUCT_COPY_FILES += \
