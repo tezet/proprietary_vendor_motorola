@@ -16,8 +16,9 @@
 PRODUCT_COPY_FILES += \
     vendor/motorola/milestone2/lib/libarcsoft.so:obj/lib/libarcsoft.so \
     vendor/motorola/milestone2/lib/libaudio.so:obj/lib/libaudio.so \
-    vendor/motorola/milestone2/lib/libsmiledetect.so:obj/lib/libsmiledetect.so
-    
+    vendor/motorola/milestone2/lib/libsmiledetect.so:obj/lib/libsmiledetect.so \
+    vendor/motorola/milestone2/lib/libcamera.so:obj/lib/libcamera.so
+
 # LIBS
 PRODUCT_COPY_FILES += \
     vendor/motorola/milestone2/lib/libbayercamera.so:system/lib/libbayercamera.so \
