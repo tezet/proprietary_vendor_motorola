@@ -129,7 +129,8 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/bin/ap_gain.bin:system/bin/ap_gain.bin \
 	$(vendor_path)/bin/brcm_guci_drv:system/bin/brcm_guci_drv \
 	$(vendor_path)/bin/akmd2:system/bin/akmd2 \
-	$(vendor_path)/bin/usbd:system/bin/usbd \
+	$(vendor_path)/bin/usbd.froyo:system/bin/usbd.froyo \
+	$(vendor_path)/bin/usbd.gb:system/bin/usbd.gb \
 	$(vendor_path)/bin/location:system/bin/location \
 	$(vendor_path)/bin/ssmgrd:system/bin/ssmgrd \
 	$(vendor_path)/bin/charge_only_mode:system/bin/charge_only_mode
