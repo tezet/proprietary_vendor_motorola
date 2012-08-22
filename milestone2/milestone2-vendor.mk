@@ -19,17 +19,23 @@ PRODUCT_COPY_FILES += \
     $(vendor_path)/lib/libarcsoft.so:obj/lib/libarcsoft.so \
     $(vendor_path)/lib/libaudio.so:obj/lib/libaudio.so \
     $(vendor_path)/lib/libsmiledetect.so:obj/lib/libsmiledetect.so
-    
+       
 # LIBS
 PRODUCT_COPY_FILES += \
 	$(vendor_path)/lib/libaudio.so:system/lib/libaudio.so \
+	$(vendor_path)/lib/libbattd.so:system/lib/libbattd.so \
 	$(vendor_path)/lib/libcaps.so:system/lib/libcaps.so \
+	$(vendor_path)/lib/libcryptoki.so:system/lib/libcryptoki.so \
 	$(vendor_path)/lib/libgki.so:system/lib/libgki.so \
 	$(vendor_path)/lib/libmotdb.so:system/lib/libmotdb.so \
+	$(vendor_path)/lib/libmotodbgutils.so:system/lib/libmotodbgutils.so \
 	$(vendor_path)/lib/libmsl_interface.so:system/lib/libmsl_interface.so \
+	$(vendor_path)/lib/libsmapi.so:system/lib/libsmapi.so \
 	$(vendor_path)/lib/libssmgr.so:system/lib/libssmgr.so \
 	$(vendor_path)/lib/libril-moto-umts-1.so:system/lib/libril-moto-umts-1.so \
 	$(vendor_path)/lib/librilswitch.so:system/lib/librilswitch.so \
+	$(vendor_path)/lib/libtpa.so:system/lib/libtpa.so \
+	$(vendor_path)/lib/libtpa_core.so:system/lib/libtpa_core.so \
 	$(vendor_path)/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
 	$(vendor_path)/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
 	$(vendor_path)/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
