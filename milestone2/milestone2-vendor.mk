@@ -124,7 +124,8 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/bin/location:system/bin/location \
 	$(vendor_path)/bin/ssmgrd:system/bin/ssmgrd \
 	$(vendor_path)/bin/opprofdaemon:system/bin/opprofdaemon \
-	$(vendor_path)/bin/battd:system/bin/battd
+	$(vendor_path)/bin/battd.froyo:system/bin/battd.froyo \
+	$(vendor_path)/bin/battd.gb:system/bin/battd.gb
 	
 # TI SGX DDK 1.8 ES 5.x
 PRODUCT_COPY_FILES += \
