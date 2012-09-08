@@ -110,7 +110,15 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/etc/motorola/bp_nvm_default/File_Logger:system/etc/motorola/bp_nvm_default/File_Logger \
 	$(vendor_path)/etc/motorola/bp_nvm_default/File_Seem_Flex_Tables:system/etc/motorola/bp_nvm_default/File_Seem_Flex_Tables \
 	$(vendor_path)/etc/motorola/bp_nvm_default/File_UMA:system/etc/motorola/bp_nvm_default/File_UMA
-
+	
+# basebands
+PRODUCT_COPY_FILES += \
+	$(vendor_path)/etc/motorola/basebands/america/br_236.zip:system/etc/motorola/basebands/america/br_236.zip \
+	$(vendor_path)/etc/motorola/basebands/asia/ch_221.zip:system/etc/motorola/basebands/asia/ch_221.zip \
+	$(vendor_path)/etc/motorola/basebands/asia/ch_234.zip:system/etc/motorola/basebands/asia/ch_234.zip \
+	$(vendor_path)/etc/motorola/basebands/europe/uk_221.zip:system/etc/motorola/basebands/europe/uk_221.zip \
+	$(vendor_path)/etc/motorola/basebands/europe/uk_234.zip:system/etc/motorola/basebands/europe/uk_234.zip \
+	
 # bin
 PRODUCT_COPY_FILES += \
 	$(vendor_path)/bin/protocol_driver:system/bin/protocol_driver \
