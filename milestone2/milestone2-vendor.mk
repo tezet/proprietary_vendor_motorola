@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/lib/librilswitch.so:system/lib/librilswitch.so \
 	$(vendor_path)/lib/libtpa.so:system/lib/libtpa.so \
 	$(vendor_path)/lib/libtpa_core.so:system/lib/libtpa_core.so \
+	$(vendor_path)/lib/libpanic_daemon.so:system/lib/libpanic_daemon.so \
 	$(vendor_path)/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
 	$(vendor_path)/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so \
 	$(vendor_path)/lib/libOMX.TI.mp4.splt.Encoder.so:system/lib/libOMX.TI.mp4.splt.Encoder.so \
@@ -88,7 +89,8 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/etc/motorola/comm_drv/mmins_telephony.cfg:system/etc/motorola/comm_drv/mmins_telephony.cfg \
 	$(vendor_path)/etc/motorola/comm_drv/mmins_user_settings.cfg:system/etc/motorola/comm_drv/mmins_user_settings.cfg \
 	$(vendor_path)/etc/motorola/comm_drv/plmn_text_table.bin:system/etc/motorola/comm_drv/plmn_text_table.bin \
-	$(vendor_path)/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt
+	$(vendor_path)/etc/motorola/comm_drv/PLMN_VERSION.txt:system/etc/motorola/comm_drv/PLMN_VERSION.txt \
+	$(vendor_path)/etc/motorola/panic_daemon.config:system/etc/motorola/panic_daemon.config
 	
 # default baseband
 PRODUCT_COPY_FILES += \
@@ -133,7 +135,9 @@ PRODUCT_COPY_FILES += \
 	$(vendor_path)/bin/ssmgrd:system/bin/ssmgrd \
 	$(vendor_path)/bin/opprofdaemon:system/bin/opprofdaemon \
 	$(vendor_path)/bin/battd.froyo:system/bin/battd.froyo \
-	$(vendor_path)/bin/battd.gb:system/bin/battd.gb
+	$(vendor_path)/bin/battd.gb:system/bin/battd.gb \
+    $(vendor_path)/bin/secclkd:system/bin/secclkd \
+    $(vendor_path)/bin/panic_daemon:system/bin/panic_daemon \
 	
 # TI SGX DDK 1.8 ES 5.x
 PRODUCT_COPY_FILES += \
